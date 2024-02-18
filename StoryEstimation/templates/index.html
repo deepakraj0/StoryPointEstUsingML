@@ -1,0 +1,21 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>AI Model Interface</title>
+</head>
+<body>
+    <h1>AI Model Interface</h1>
+    <form action="/predict" method="post">
+        <label for="feature1">Feature 1:</label>
+        <input type="text" id="feature1" name="feature1"><br><br>
+        <input type="text" id="feature2" name="feature2"><br><br>
+        <input type="text" id="feature3" name="feature3"><br><br>
+        <!-- Add more input fields for other features -->
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
